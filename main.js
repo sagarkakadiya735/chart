@@ -783,6 +783,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _classes_analytics_classes_analytics_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./classes-analytics/classes-analytics.component */ "OQg9");
 /* harmony import */ var _marketing_analytics_marketing_analytics_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./marketing-analytics/marketing-analytics.component */ "Oo4m");
 /* harmony import */ var angular_highcharts__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! angular-highcharts */ "a0Xn");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
 
 
 
@@ -797,7 +799,7 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_10__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_10__["HashLocationStrategy"] }], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
             angular_highcharts__WEBPACK_IMPORTED_MODULE_9__["ChartModule"]
@@ -826,7 +828,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                     angular_highcharts__WEBPACK_IMPORTED_MODULE_9__["ChartModule"]
                 ],
-                providers: [],
+                providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_10__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_10__["HashLocationStrategy"] }],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
             }]
     }], null, null); })();
